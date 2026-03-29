@@ -1,0 +1,19 @@
+{
+  "name": "coremem",
+  "description": "Load and manage CoreMem mems in your Claude Code sessions. Automatically surfaces relevant context and lets you propose updates back to your mem store.",
+  "version": "1.0.0",
+  "author": {
+    "name": "CoreMem",
+    "url": "https://coremem.app"
+  },
+  "homepage": "https://coremem.app",
+  "repository": "https://github.com/corememapp/claude-plugin",
+  "license": "MIT",
+  "keywords": ["context", "memory", "mems", "knowledge", "coremem"],
+  "userConfig": {
+    "api_key": {
+      "description": "Your CoreMem API key — generate one at coremem.app/developers (requires Pro)",
+      "sensitive": true
+    }
+  }
+}
