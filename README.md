@@ -32,15 +32,27 @@ Three skills wire those tools into your workflow:
 
 ## Setup
 
-Set your CoreMem API key as an environment variable:
+The plugin supports two auth methods. Use whichever fits your setup.
+
+**Option 1 — API key (MCP server)**
+
+Requires a Pro account. Generate a key at [coremem.app/developers](https://coremem.app/developers):
 
 ```bash
 export COREMEM_API_KEY=your-api-key
 ```
 
-Generate an API key at [coremem.app/developers](https://coremem.app/developers) (requires Pro). Add the export to your shell profile to persist it across sessions.
+**Option 2 — Share token (CLI)**
 
-Then install the plugin:
+Requires the `coremem` CLI installed and a share token created via `coremem-admin`:
+
+```bash
+export COREMEM_TOKEN=your-share-token
+```
+
+The CLI path works fully offline against your local SQLite database.
+
+Add whichever export(s) you use to your shell profile, then install the plugin:
 
 ```bash
 claude plugin install coremem
