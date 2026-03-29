@@ -36,7 +36,7 @@ The plugin supports two auth methods. Use whichever fits your setup.
 
 **Option 1 — API key (MCP server)**
 
-Requires a Pro account. Generate a key at [coremem.app/developers](https://coremem.app/developers):
+Requires a Pro account. Generate a key at [coremem.app](https://coremem.app):
 
 ```bash
 export COREMEM_API_KEY=your-api-key
