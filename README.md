@@ -45,7 +45,7 @@ Generate an API key at [coremem.app/developers](https://coremem.app/developers).
 Clone this repo and load it directly without installing:
 
 ```bash
-claude --plugin-dir ./claude-plugin
+claude --plugin-dir .
 ```
 
 Run `/help` to confirm the skills are registered under the `coremem` namespace. Try `/coremem:list` to verify the MCP connection is working.
