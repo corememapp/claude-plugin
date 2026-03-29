@@ -9,13 +9,5 @@
   "homepage": "https://coremem.app",
   "repository": "https://github.com/corememapp/claude-plugin",
   "license": "MIT",
-  "keywords": ["context", "memory", "mems", "knowledge", "coremem"],
-  "userConfig": {
-    "api_key": {
-      "title": "CoreMem API key",
-      "description": "Generate one at coremem.app/developers (requires Pro)",
-      "type": "string",
-      "sensitive": true
-    }
-  }
+  "keywords": ["context", "memory", "mems", "knowledge", "coremem"]
 }

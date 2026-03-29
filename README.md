@@ -32,25 +32,30 @@ Three skills wire those tools into your workflow:
 
 ## Setup
 
-Install the plugin and Claude Code will prompt you for your CoreMem API key:
+Set your CoreMem API key as an environment variable:
+
+```bash
+export COREMEM_API_KEY=your-api-key
+```
+
+Generate an API key at [coremem.app/developers](https://coremem.app/developers) (requires Pro). Add the export to your shell profile to persist it across sessions.
+
+Then install the plugin:
 
 ```bash
 claude plugin install coremem
 ```
 
-Generate an API key at [coremem.app/developers](https://coremem.app/developers). The key is stored in your system keychain and used to authenticate requests to the CoreMem MCP server.
-
 ## Test locally
 
-Clone this repo and load it directly without installing:
+Clone this repo, set `COREMEM_API_KEY`, and load the plugin directly:
 
 ```bash
+export COREMEM_API_KEY=your-api-key
 claude --plugin-dir .
 ```
 
-Claude Code will prompt you for your API key on first load. Once entered, run `/coremem:list` to verify the MCP connection is working.
-
-Note: `--plugin-dir` requires an interactive session. Running with `-p` or `--print` will skip the plugin because there is no way to prompt for the API key.
+Run `/coremem:list` to verify the MCP connection is working.
 
 ## Proposals
 

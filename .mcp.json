@@ -4,7 +4,7 @@
       "type": "http",
       "url": "https://api.coremem.app/api/mcp",
       "headers": {
-        "Authorization": "Bearer ${user_config.api_key}"
+        "Authorization": "Bearer ${COREMEM_API_KEY}"
       }
     }
   }
