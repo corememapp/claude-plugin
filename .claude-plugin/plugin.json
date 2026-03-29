@@ -12,7 +12,9 @@
   "keywords": ["context", "memory", "mems", "knowledge", "coremem"],
   "userConfig": {
     "api_key": {
-      "description": "Your CoreMem API key — generate one at coremem.app/developers (requires Pro)",
+      "title": "CoreMem API key",
+      "description": "Generate one at coremem.app/developers (requires Pro)",
+      "type": "string",
       "sensitive": true
     }
   }
