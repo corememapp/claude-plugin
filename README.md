@@ -48,7 +48,9 @@ Clone this repo and load it directly without installing:
 claude --plugin-dir .
 ```
 
-Run `/help` to confirm the skills are registered under the `coremem` namespace. Try `/coremem:list` to verify the MCP connection is working.
+Claude Code will prompt you for your API key on first load. Once entered, run `/coremem:list` to verify the MCP connection is working.
+
+Note: `--plugin-dir` requires an interactive session. Running with `-p` or `--print` will skip the plugin because there is no way to prompt for the API key.
 
 ## Proposals
 
