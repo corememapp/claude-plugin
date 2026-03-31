@@ -43,6 +43,7 @@ Until the plugin is available on the Claude store, you can install it from a loc
    ```bash
    git clone https://github.com/corememapp/claude-plugin.git
    ```
+Generate a key at [coremem.app/integrations](https://coremem.app/integrations). A free account can read mems; a Pro account also enables `learn`:
 
 2. Register the cloned directory as a local marketplace:
    ```bash
