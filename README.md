@@ -2,7 +2,7 @@
 
 A Claude Code plugin that connects your mems to your coding sessions. Claude loads relevant context automatically, and you can propose updates back to your mem store without leaving the editor.
 
-This plugin uses the [CoreMem MCP server](https://coremem.app/integrations#mcp) for all reads and writes.
+This plugin uses the [CoreMem MCP server](https://coremem.app/integrations) for all reads and writes.
 
 ## How it works
 
@@ -43,7 +43,6 @@ Until the plugin is available on the Claude store, you can install it from a loc
    ```bash
    git clone https://github.com/corememapp/claude-plugin.git
    ```
-Generate a key at [coremem.app/integrations](https://coremem.app/integrations). A free account can read mems; a Pro account also enables `learn`:
 
 2. Register the cloned directory as a local marketplace:
    ```bash
@@ -64,3 +63,7 @@ No API key or manual MCP configuration is needed. The plugin registers the MCP s
 ## AI write-back
 
 When Claude runs `/coremem:create` or `/coremem:learn`, it submits a proposal through the MCP server. Nothing changes in your mem store until you review and approve it. Review proposals in the [CoreMem web app](https://coremem.app/pending).
+
+## Prefer a direct MCP setup?
+
+If you'd rather skip the plugin and connect with an API key instead, see the [API key setup guide](https://coremem.app/integrations#api-keys) on the integrations page.
