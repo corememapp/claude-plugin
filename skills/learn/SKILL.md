@@ -1,6 +1,6 @@
 ---
 name: learn
-description: Propose an update to a CoreMem mem. Use when the user wants to save new information, correct existing mem content, or update a mem with something learned during this session.
+description: Propose an update to an existing CoreMem mem. Use when the user wants to correct or add to an existing mem. Do NOT use this to create a new mem — use create for that.
 disable-model-invocation: true
 allowed-tools: mcp__coremem__list_mems, mcp__coremem__get_mem, mcp__coremem__search_mems, mcp__coremem__propose_update, Bash
 argument-hint: [mem name or topic] [content to add or update]

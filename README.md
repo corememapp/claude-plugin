@@ -6,24 +6,26 @@ This plugin uses the [CoreMem MCP server](https://coremem.app) for all reads and
 
 ## How it works
 
-When you install the plugin, Claude Code gains access to four MCP tools:
+When you install the plugin, Claude Code gains access to five MCP tools:
 
 - `list_mems` — see what mems you have
 - `get_mem` — read a specific mem
 - `search_mems` — find mems by keyword
-- `propose_update` — submit a proposed change for your review
+- `create_mem` — propose a brand-new mem for your review
+- `propose_update` — propose a change to an existing mem for your review
 
-Three skills wire those tools into your workflow:
+Four skills wire those tools into your workflow:
 
 | Skill | How to invoke | What it does |
 |---|---|---|
 | `recall` | Auto, or `/coremem:recall [query]` | Searches for mems relevant to your current task and loads them |
-| `learn` | `/coremem:learn [topic] [content]` | Proposes an update to a mem — nothing is applied until you approve it |
+| `create` | `/coremem:create [name] [content]` | Proposes a new mem — nothing is saved until you approve it |
+| `learn` | `/coremem:learn [topic] [content]` | Proposes an update to an existing mem — nothing is applied until you approve it |
 | `list` | `/coremem:list [filter]` | Lists all your mems |
 
 `recall` is model-invoked, meaning Claude decides when to use it. If you are working on something and Claude thinks context from your mems would help, it loads it. You can also call it directly with a query if you want to pull something specific.
 
-`learn` and `list` are user-invoked only. Claude will not trigger them on your behalf.
+`create`, `learn`, and `list` are user-invoked only. Claude will not trigger them on your behalf.
 
 ## Requirements
 
@@ -71,4 +73,4 @@ Run `/coremem:list` to verify the MCP connection is working.
 
 ## Proposals
 
-When Claude runs `/coremem:learn`, it submits a proposal through the MCP server. Nothing changes in your mem store until you review and approve it. Review proposals in the CoreMem web app or with `coremem-admin proposals` if you use the CLI.
+When Claude runs `/coremem:create` or `/coremem:learn`, it submits a proposal through the MCP server. Nothing changes in your mem store until you review and approve it. Review proposals in the CoreMem web app or with `coremem-admin proposals` if you use the CLI.
