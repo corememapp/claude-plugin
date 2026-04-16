@@ -1,0 +1,26 @@
+{
+  "name": "coremem",
+  "owner": {
+    "name": "CoreMem",
+    "email": "hello@coremem.app"
+  },
+  "metadata": {
+    "description": "Connect your CoreMem mems to Claude Code sessions",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "coremem",
+      "source": ".",
+      "description": "Load and manage CoreMem mems in your Claude Code sessions. Automatically surfaces relevant context and lets you propose updates back to your mem store.",
+      "version": "1.0.0",
+      "author": {
+        "name": "CoreMem"
+      },
+      "homepage": "https://coremem.app",
+      "repository": "https://github.com/corememapp/claude-plugin",
+      "license": "MIT",
+      "keywords": ["context", "memory", "mems", "knowledge", "coremem"]
+    }
+  ]
+}

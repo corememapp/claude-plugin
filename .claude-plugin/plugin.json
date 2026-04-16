@@ -9,5 +9,15 @@
   "homepage": "https://coremem.app",
   "repository": "https://github.com/corememapp/claude-plugin",
   "license": "MIT",
-  "keywords": ["context", "memory", "mems", "knowledge", "coremem"]
+  "keywords": ["context", "memory", "mems", "knowledge", "coremem"],
+  "skills": ["skills/create", "skills/learn", "skills/list", "skills/recall"],
+  "mcpServers": {
+    "coremem": {
+      "type": "http",
+      "url": "https://api.coremem.app/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${COREMEM_API_KEY}"
+      }
+    }
+  }
 }
