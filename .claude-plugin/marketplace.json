@@ -12,8 +12,8 @@
       "description": "Load and manage CoreMem mems in your Claude Code sessions. Automatically surfaces relevant context and lets you propose updates back to your mem store.",
       "category": "productivity",
       "source": {
-        "source": "url",
-        "url": "https://github.com/corememapp/claude-plugin.git"
+        "source": "github",
+        "repo": "corememapp/claude-plugin"
       },
       "homepage": "https://coremem.app"
     }
