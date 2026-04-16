@@ -1,7 +1,7 @@
 ---
 name: create
 description: Create a brand-new mem in the user's CoreMem library. Use only when the user explicitly asks to save or create something new in CoreMem. The proposal is queued for their review — it is never saved automatically.
-disable-model-invocation: true
+disable-model-invocation: false
 allowed-tools: mcp__coremem__create_mem
 argument-hint: [mem name] [content]
 ---

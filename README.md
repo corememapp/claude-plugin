@@ -49,7 +49,7 @@ export COREMEM_API_KEY=your-api-key
 Requires the `coremem` CLI installed and a share token created via `coremem-admin`:
 
 ```bash
-export COREMEM_TOKEN=your-share-token
+export COREMEM_API_KEY=your-api-key
 ```
 
 The CLI path works fully offline against your local SQLite database.
