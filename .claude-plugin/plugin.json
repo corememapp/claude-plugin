@@ -10,7 +10,6 @@
   "repository": "https://github.com/corememapp/claude-plugin",
   "license": "MIT",
   "keywords": ["context", "memory", "mems", "knowledge", "coremem"],
-  "skills": ["skills/create", "skills/learn", "skills/list", "skills/recall"],
   "mcpServers": {
     "coremem": {
       "type": "http",
