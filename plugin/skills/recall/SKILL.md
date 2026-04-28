@@ -13,6 +13,6 @@ Load relevant context from the user's CoreMem mem store using the `coremem` MCP 
 
 If $ARGUMENTS is provided, treat it as the search query instead of inferring keywords from context.
 
-If the `coremem` MCP server is not connected, tell the user to set it up by adding their API key and running `claude mcp add --transport http coremem https://api.coremem.app/api/mcp --header "Authorization: Bearer $COREMEM_API_KEY"`.
+If the `coremem` MCP server is not connected, tell the user to run `/mcp` in Claude Code to authenticate via OAuth, then restart their session.
 
 Do not load mems that are clearly unrelated to the current task. Prefer relevance over completeness.

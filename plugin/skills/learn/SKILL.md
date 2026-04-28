@@ -18,6 +18,6 @@ Propose an update to a CoreMem mem using $ARGUMENTS as guidance.
 
 If $ARGUMENTS is empty, ask the user what they want to update and what the new content should be.
 
-If the `coremem` MCP server is not connected, tell the user to set it up by adding their API key and running `claude mcp add --transport http coremem https://api.coremem.app/api/mcp --header "Authorization: Bearer $COREMEM_API_KEY"`.
+If the `coremem` MCP server is not connected, tell the user to run `/mcp` in Claude Code to authenticate via OAuth, then restart their session.
 
 Note: proposals are never applied automatically. The user reviews and approves all changes in the CoreMem web app or via `coremem-admin proposals`.
