@@ -13,10 +13,7 @@
   "mcpServers": {
     "coremem": {
       "type": "http",
-      "url": "https://api.coremem.app/api/mcp",
-      "headers": {
-        "Authorization": "Bearer ${COREMEM_API_KEY}"
-      }
+      "url": "https://api.coremem.app/api/mcp"
     }
   }
 }
