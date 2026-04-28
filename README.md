@@ -2,7 +2,7 @@
 
 A Claude Code plugin that connects your mems to your coding sessions. Claude loads relevant context automatically, and you can propose updates back to your mem store without leaving the editor.
 
-This plugin uses the [CoreMem MCP server](https://coremem.app/integrations#mcp) for all reads and writes. 
+This plugin uses the [CoreMem MCP server](https://coremem.app/integrations#mcp) for all reads and writes.
 
 ## How it works
 
@@ -30,16 +30,10 @@ Four skills wire those tools into your workflow:
 ## Requirements
 
 - Claude Code 1.0.33 or later
-- A CoreMem account (API key required)
-- (Optional) [CoreMem Pro](https://coremem.app/pricing) for `learn` feature
+- A CoreMem account
+- (Optional) [CoreMem Pro](https://coremem.app/pricing) for `learn` and `create` features
 
 ## Setup
-
-Generate a key at [coremem.app](https://coremem.app/integrations#mcp). Then, add your key to your environment, e.g.,
-
-```bash
-export COREMEM_API_KEY=your-api-key
-```
 
 ### Install from local clone
 
@@ -47,7 +41,7 @@ Until the plugin is available on the Claude store, you can install it from a loc
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/coremem/claude-plugin.git
+   git clone https://github.com/corememapp/claude-plugin.git
    ```
 
 2. Register the cloned directory as a local marketplace:
@@ -55,13 +49,17 @@ Until the plugin is available on the Claude store, you can install it from a loc
    claude plugin marketplace add /path/to/claude-plugin
    ```
 
-3. Install the plugin from it:
+3. Install the plugin:
    ```bash
    claude plugin install coremem@coremem
    ```
 
-4. Start a new session of Claude and run `/coremem:list` to verify the plugin is installed and the MCP connection is working
+4. Start a new Claude Code session. On first use, Claude Code will prompt you to sign in to CoreMem — follow the OAuth flow in your browser.
 
-## AI Write-back
+5. Run `/coremem:list` to verify the connection is working.
+
+No API key or manual MCP configuration is needed. The plugin registers the MCP server automatically and uses OAuth for authentication.
+
+## AI write-back
 
 When Claude runs `/coremem:create` or `/coremem:learn`, it submits a proposal through the MCP server. Nothing changes in your mem store until you review and approve it. Review proposals in the [CoreMem web app](https://coremem.app/pending).
