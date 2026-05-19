@@ -7,7 +7,7 @@ allowed-tools: mcp__coremem__list_mems
 
 List the user's CoreMem mems using the `coremem` MCP server.
 
-Call `list_mems` and present the results as a clean list showing each mem's name, slug, and description. Note the total count.
+Call `list_mems` and present the results as a clean list showing each mem's name and slug. Note the total count.
 
 If $ARGUMENTS is provided, filter the list to mems whose name or description contains that string.
 
